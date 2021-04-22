@@ -8,3 +8,20 @@
     License URI: https://www.gnu.org/licenses/gpl-2.0.html
     Tags: Gym,gimnasio,flexbox,css,grid,mobile firs
     */
+
+ :root {
+    /*Funtes*/
+    --fuentePrincipal: 'Staatliches', cursive;
+    --fuenteTexto: 'Open Sans', sans-serif;
+    --funteSecundaria: 'Raleway', sans-serif;
+    /*Colores*/
+    --colorPrimario: #FF5B00;
+    --grisObscuro: #2F2E2E;
+    --grisClaro: #EBEBEB;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+h1 {
+    font-family: var(--fuentePrincipal);
+}
