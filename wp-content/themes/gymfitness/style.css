@@ -97,3 +97,30 @@ ul {
     width: 95%;
     margin: 0 auto;
 }
+
+
+/***********HEADER*******/
+
+.site-header {
+    background-color: var(--grisObscuro);
+    padding: 2rem 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+/**********MENU PRINCIPAL*********/
+
+.menu-principal {
+    display: none;
+}
+
+@media(min-width:768) {
+    .menu-principal {
+        display: fles;
+        justify-content: space-between;
+    }
+}
