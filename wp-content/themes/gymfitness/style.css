@@ -190,3 +190,36 @@ ul {
 .menu-principal .current_page_item {
     border-bottom: 3px solid var(--colorPrimario);
 }
+
+
+/*REESCRIBIR ESTILOS MENU MOVIL*/
+
+.slicknav_menu {
+    background-color: var(--grisObscuro);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media(min-width:768px) {
+    .slicknav_menu {
+        display: none;
+    }
+}
+
+.slicknav_btn {
+    background-color: var(--colorPrimario);
+    margin: 3rem 0;
+    padding: 1.5rem;
+}
+
+.slicknav_nav a {
+    font-size: 2.4rem;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+}
+
+.slicknav_nav a:hover {
+    background: transparent;
+    color: var(--colorPrimario);
+}
