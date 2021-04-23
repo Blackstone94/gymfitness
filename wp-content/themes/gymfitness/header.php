@@ -13,16 +13,15 @@
                 <div class="logo">
                     <img src="<?php echo get_template_directory_uri()?>/img/logo.svg" alt="logo sitio">
                 </div>
-                <div class="menu-principal">
                 <?php
                     $args=array(
-                        'theme_location'=>'menu-principal',
+                        'theme_location' => 'menu-principal',
                         'container'=>'nav',
-                        'container_class'=>'menu-principal'
+                        'menu_class'=>'menu-principal'
                     );
                     wp_nav_menu( ($args));  
                 ?>
-                </div>
+
             </div>
         </div>
     </header>
