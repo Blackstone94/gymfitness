@@ -1,4 +1,4 @@
-    <footer class="site-footer">
+    <footer class="site-footer contenedor">
         <?php wp_footer();?>
         <?php
             $args=array(
