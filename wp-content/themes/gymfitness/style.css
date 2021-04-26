@@ -87,7 +87,7 @@ ul {
     padding: 0;
 }
 
-.img {
+img {
     width: 100%;
     height: auto;
 }
@@ -96,6 +96,25 @@ ul {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
+}
+
+hr {
+    border: 1px solid var(--grisClaro);
+}
+
+
+/*******************************UTILIDADES**********/
+
+.texto-centrado {
+    text-align: center;
+}
+
+.texto-primario {
+    color: var(--colorPrimario);
+}
+
+.seccion {
+    padding: 5rem 0;
 }
 
 
@@ -123,7 +142,7 @@ ul {
     display: none;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .menu-principal {
         display: flex;
         align-items: center;
@@ -269,9 +288,33 @@ ul {
     font-size: 1.8rem;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .copyright {
         font-size: 2.4rem;
         margin: 0;
+    }
+}
+
+
+/****************PAGINAS**********************/
+
+.imagen-destacada {
+    margin-bottom: 3rem;
+}
+
+.pagina h1 {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .pagina.con-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .con-sidebar .contenido-princial {
+        flex: 0 0 calc(65% - 2rem);
+    }
+    .con-sidebar .sidebar {
+        flex: 0 0 calc(35% - 2rem);
     }
 }
