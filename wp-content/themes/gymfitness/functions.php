@@ -3,6 +3,13 @@
 //Cuando el tema es activado
 function gymfitness_setup(){
     add_theme_support('post-thumbnails');
+
+    //Agregar tamaños de imagenes personalizados
+    add_image_size('squere', 350, 350, true);
+    add_image_size('portrait', 350, 724, true);
+    add_image_size('cajas',400,400,true);
+    add_image_size('mediano',700,400,true);
+    add_image_size('blog',966,644,true);
 }
 add_action('after_setup_theme','gymfitness_setup');
 
