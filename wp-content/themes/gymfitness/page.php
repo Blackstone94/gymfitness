@@ -1,7 +1,13 @@
 <?php get_header();  
-while(have_posts()):the_post();?>
-<h1><?php the_title();?></h1>
-<?php the_content();  
-endwhile;
-    get_footer();
+
+    while(have_posts()):the_post();?>
+        <h1><?php the_title();?></h1>
+        <?php 
+        if(has_post_thumbnail()):
+            the_post_thumbnail();
+        endif; 
+        ?>
+        <?php the_content();  
+    endwhile;
+        get_footer();
 ?>
