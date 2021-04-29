@@ -334,6 +334,16 @@ hr {
 }
 
 
+/*SINGLE CLASS*/
+
+.informacion-clase {
+    font-family: var(--funteSecundaria);
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+
 /*****************CLASES********/
 
 @media(min-width:768px) {
