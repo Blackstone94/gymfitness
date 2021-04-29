@@ -1,4 +1,6 @@
 <?php
+//queries reutilizables
+include get_template_directory() . '/inc/queries.php';
 
 //Cuando el tema es activado
 function gymfitness_setup(){
