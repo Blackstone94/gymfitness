@@ -8,7 +8,7 @@ function gymfitness_setup(){
     set_post_thumbnail_size(150, 150);
     
     //Agregar tamaños de imagenes personalizados
-    add_image_size('squere', 350, 350, true);
+    add_image_size('square', 350, 350, true);
     add_image_size('portrait', 350, 724, true);
     add_image_size('cajas',400,400,true);
     add_image_size('mediano',700,400,true);
