@@ -9,7 +9,7 @@
     Text Domain: gymfitness
 
 */
-//if(!defined('ABSPATH'))die();
+if(!defined('ABSPATH'))die();
 // Registrar Custom Post Type
 function gymfitness_clases_post_type() {
 

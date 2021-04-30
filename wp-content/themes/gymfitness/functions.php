@@ -5,7 +5,8 @@ include get_template_directory() . '/inc/queries.php';
 //Cuando el tema es activado
 function gymfitness_setup(){
     add_theme_support('post-thumbnails');
-
+    set_post_thumbnail_size(150, 150);
+    
     //Agregar tamaños de imagenes personalizados
     add_image_size('squere', 350, 350, true);
     add_image_size('portrait', 350, 724, true);
@@ -40,3 +41,28 @@ add_action('after_setup_theme','gymfitness_setup');
     }
     add_action( 'wp_enqueue_scripts','gymfitness_scripts_styles');
 
+
+    //Definir widgets
+
+    function gymfitness_widgets(){
+
+        register_sidebar(array(
+            'name'=>'Sidebar 1',
+            'id'=>'sidebar_1',
+            'before_widget' =>'<div class="widget">',
+            'after_widget' => '</div>',
+            'before_title'=>'<h3 class="texto-centrado texto-primario">',
+            'after_title'=>'</h3>'
+
+        ));
+        register_sidebar(array(
+            'name'=>'Sidebar 2',
+            'id'=>'sidebar_2',
+            'before_widget' =>'<div class="widget">',
+            'after_widget' => '</div>',
+            'before_title'=>'<h3 class="texto-centrado texto-primario">',
+            'after_title'=>'</h3>'
+
+        ));
+    }
+    add_action('widgets_init','gymfitness_widgets');

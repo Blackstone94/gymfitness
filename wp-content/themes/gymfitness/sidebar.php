@@ -1,3 +1,5 @@
 <aside class="sidebar">
-    <h1 class="texto-centrado texto-primario">con sidebar</h1>
+    <?PHP
+        dynamic_sidebar('sidebar_1')
+    ?>
 </aside>
