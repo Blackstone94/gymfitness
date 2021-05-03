@@ -50,7 +50,7 @@ add_action('after_setup_theme','gymfitness_setup');
     //Definir widgets
 
     function gymfitness_widgets(){
-
+        
         register_sidebar(array(
             'name'=>'Sidebar 1',
             'id'=>'sidebar_1',

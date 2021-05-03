@@ -604,4 +604,27 @@ hr {
 }
 
 
-/*****************BLOG*********************/
+/************widget****************/
+
+.widget {
+    border-bottom: 1px solid var(--grisClaro);
+    padding: 2rem 0;
+}
+
+.widget:first-of-type {
+    padding-top: 0;
+}
+
+.widget:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0rem;
+}
+
+.widget a {
+    color: var(--negro);
+    padding: 2rem 0;
+}
+
+.widget a:hover {
+    color: var(--colorPrimario);
+}
