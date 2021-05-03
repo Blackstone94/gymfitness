@@ -4,7 +4,12 @@ include get_template_directory() . '/inc/queries.php';
 
 //Cuando el tema es activado
 function gymfitness_setup(){
+    /**ssoporte para imagenes destacas */
     add_theme_support('post-thumbnails');
+
+    /**titulo seo */
+    add_theme_support('title-tag');
+    
     set_post_thumbnail_size(150, 150);
     
     //Agregar tamaños de imagenes personalizados
@@ -50,7 +55,7 @@ add_action('after_setup_theme','gymfitness_setup');
     //Definir widgets
 
     function gymfitness_widgets(){
-        
+
         register_sidebar(array(
             'name'=>'Sidebar 1',
             'id'=>'sidebar_1',
