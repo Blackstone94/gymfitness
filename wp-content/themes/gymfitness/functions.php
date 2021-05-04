@@ -48,6 +48,11 @@ add_action('after_setup_theme','gymfitness_setup');
         if(is_page('galeria')):
             wp_enqueue_script('lightboxJs',get_template_directory_uri( ).'/js/lightbox.js',array('jquery'),'2.11.3');
         endif;
+        if(is_page('contacto')):
+            wp_enqueue_style('leafletCss','https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
+            wp_enqueue_script('leafletJS','https://unpkg.com/leaflet@1.7.1/dist/leaflet.js');
+        endif;
+
     }
     add_action( 'wp_enqueue_scripts','gymfitness_scripts_styles');
 

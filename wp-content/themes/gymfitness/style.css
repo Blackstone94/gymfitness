@@ -329,7 +329,7 @@ hr {
     justify-content: center;
 }
 
-.no-sidebar .contenido-princial {
+.no-sidebar .contenido-principal {
     flex: 0 1 800px;
 }
 
@@ -627,4 +627,42 @@ hr {
 
 .widget a:hover {
     color: var(--colorPrimario);
+}
+
+
+/*FORMULARIO DE CONTACTO**/
+
+.wpcf7 label {
+    font-weight: 700;
+}
+
+.wpcf7 .wpcf7-form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--grisClaro);
+    height: 4rem;
+}
+
+.wpcf7 .wpcf7-textarea {
+    height: 20rem;
+}
+
+.wpcf7 .wpcf7-submit {
+    background-color: var(--colorPrimario);
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 2rem;
+    height: auto;
+    transition: ease-in-out .7s;
+}
+
+.wpcf7 .wpcf7-submit:hover {
+    background-color: var(--blanco);
+    color: var(--colorPrimario);
+    cursor: pointer;
+    border: 3px solid var(--colorPrimario);
+}
+
+#map {
+    height: 45rem;
 }
