@@ -1,7 +1,7 @@
 <?php
 //queries reutilizables
 include get_template_directory() . '/inc/queries.php';
-
+include get_template_directory() . '/inc/shortcodes.php';
 //Cuando el tema es activado
 function gymfitness_setup(){
     /**ssoporte para imagenes destacas */
