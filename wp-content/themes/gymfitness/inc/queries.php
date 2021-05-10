@@ -1,11 +1,11 @@
 <?php
-    function gymfitness_lista_clases(){?>
+    function gymfitness_lista_clases($cantidad = -1){?>
         <ul class="lista-clases">
         
         <?php
         $args = [
             'post_type' => 'gymfitness_clases',
-            'posts_per_page' => 10
+            'posts_per_page' => $cantidad
         ];
 
         $clases = new WP_Query($args);
@@ -28,7 +28,6 @@
         <?php endwhile;
           wp_reset_postdata();
         ?>
-
         </ul>
     <?php 
     }

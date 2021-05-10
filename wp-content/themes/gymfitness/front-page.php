@@ -42,5 +42,50 @@
                 <p><?php echo $area4['texto'];?></p>
             </li>
         </ul>
-    </div>
+    </div><!--areas-->
+    <section class="clases">
+        <div class="contenedor seccion">
+            <div class="texto-centrado texto-primario">
+                <h2>Nuestras clases</h2>
+                <?php gymfitness_lista_clases(4); ?>
+
+                <div class="contenedor-boton">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Nuestras clases')));?>" class="boton boton-primario">
+                        Ver todas las clases
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="instructores">
+        <div class="contenedor seccion">
+            <h2 class="texto-primario texto-centrado">Nuestros Instructores</h2>
+            <p class="texto-centrado">Instructores profesionales que te ayudaran a alcanzar tus objetivos</p>
+            <ul class="listado-instructores">
+                <?php
+                    $args= array(
+                        'post_type'=>'instructores',
+                        'post_per_page'=>30
+                    );
+                    $instructores=new WP_QUERY($args);
+                    while($instructores->have_posts()): $instructores->the_post(); ?>
+                    <li class="instructor">
+                         <?php the_post_thumbnail('mediano'); ?>
+                         <div class="contenido texto-centrado">
+                            <h3><?php the_title();?></h3>
+                            <?php the_content();?>
+                            <div class="especialidad">
+                                <?php $esp=get_field('especialidad');
+                                    foreach($esp as $e):?>
+                                       <span class="etiqueta"><?php echo $e;?></span> 
+                                    <? endforeach;
+                                ?>
+                            </div>
+                         </div>
+                    </li>
+                    <?php endwhile; wp_reset_postdata();?>
+            </ul>
+        </div>
+    </section>
 <?php get_footer();?>
