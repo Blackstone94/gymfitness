@@ -4,6 +4,13 @@ jQuery(document).ready($ => {
         appendTo: '.site-header'
     });
 
+    $('.listado-testimoniales').bxSlider({
+        auto: true,
+        mode: 'fade',
+        controls: false
+    });
+
+
     ///mapa
     const lat = document.querySelector('#lat').value,
         lng = document.querySelector('#lng').value,
@@ -19,5 +26,4 @@ jQuery(document).ready($ => {
             .bindPopup(direccion)
             .openPopup();
     }
-
 });
