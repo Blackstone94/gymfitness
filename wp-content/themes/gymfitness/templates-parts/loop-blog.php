@@ -1,4 +1,3 @@
-<?php while(have_posts()): the_post();?>
     <li class="card gradient">
         <?php the_post_thumbnail('mediano');?>
         <?php the_category();?>
@@ -17,4 +16,3 @@
             </p> 
         </div>
     </li>
-<?php endwhile;?>    

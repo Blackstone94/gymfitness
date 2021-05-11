@@ -477,6 +477,11 @@ body.home .slicknav_menu {
 .card {
     margin-bottom: 4rem;
     border-bottom: 1px solid var(--grisClaro);
+    overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.1);
 }
 
 .card:last-of-type() {
@@ -493,6 +498,7 @@ body.home .slicknav_menu {
 
 .card img {
     display: block;
+    transition: transform .5s ease;
 }
 
 .card .contenido {
@@ -949,7 +955,8 @@ body.home .slicknav_menu {
 
 .testimonial-footer p {
     color: var(--colorPrimario);
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a,
