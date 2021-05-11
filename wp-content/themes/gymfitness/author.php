@@ -6,7 +6,9 @@
     <p><?php echo get_the_author_meta( 'description', $author->ID); ?> </p>
     <div class="no-sidebar">
         <ul class="listado-blog">
+        <?php while(have_posts()): the_post();?>
             <?php  get_template_part('templates-parts/loop','blog'); ?>
+         <?php endwhile; ?> 
         </ul>
     </div>
     </main>

@@ -5,7 +5,9 @@
     <h2 class="texto-centrado texto-primario"> Categoría: <?php echo $categoria->name; ?></h2>
     <div class="no-sidebar">
         <ul class="listado-blog">
+        <?php while(have_posts()): the_post();?>
             <?php  get_template_part('templates-parts/loop','blog'); ?>
+         <?php endwhile; ?> 
         </ul>
     </div>
 

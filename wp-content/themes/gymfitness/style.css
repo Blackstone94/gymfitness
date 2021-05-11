@@ -967,3 +967,25 @@ body.home .slicknav_menu {
 .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: var(--colorPrimario);
 }
+
+
+/**********************BARRA FIJA***************/
+
+@media(min-width:768px) {
+    .fixed-top {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        padding: 1rem 5rem;
+        transition: all .3s ease;
+        background-color: var(--grisObscuro);
+    }
+    .fixed-top img {
+        width: 12rem;
+    }
+    body .ft-activo {
+        margin-top: 4rem;
+    }
+}
